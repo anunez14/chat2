@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @documenttype.name %>
+</p>
+
+<p>
+  <b>Shortname:</b>
+  <%= @documenttype.shortname %>
+</p>
+
+
+<%= link_to 'Edit', edit_documenttype_path(@documenttype) %> |
+<%= link_to 'Back', documenttypes_path %>

@@ -1,0 +1,2 @@
+class UserLocalsController < ApplicationController
+end

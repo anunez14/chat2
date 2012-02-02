@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pruebaselst: MyString
+  description: MyText
+  feclun: MyString
+  fecmar: MyString
+  fecmie: MyString
+  fecjue: MyString
+  fecvie: MyString
+  fecsab: MyString
+  fecdom: MyString
+  fecpro: MyString
+
+two:
+  pruebaselst: MyString
+  description: MyText
+  feclun: MyString
+  fecmar: MyString
+  fecmie: MyString
+  fecjue: MyString
+  fecvie: MyString
+  fecsab: MyString
+  fecdom: MyString
+  fecpro: MyString

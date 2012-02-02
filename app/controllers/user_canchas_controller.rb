@@ -1,0 +1,2 @@
+class UserCanchasController < ApplicationController
+end

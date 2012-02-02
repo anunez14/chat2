@@ -1,0 +1,40 @@
+<%= simple_form_for(@cancha) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="field">
+	<%=f.input :namecancha %>
+	
+  <div class="inputs">
+    <%= f.input :pruebaselst %>
+
+  <div class="field">
+	<%=f.association :locals %>
+	
+  </div>	
+    
+  <div class="field">
+	<%=f.input :description %>
+	
+  </div>
+  
+    <div class="field">
+	<%= f.label :fecha %><br />
+
+    <input id="fecha" name="fecha" type="checkbox" value="Lunes" /> Lunes
+	<input id="fecha" name="fecha" type="checkbox" value="Martes" /> Martes
+	<input id="fecha" name="fecha" type="checkbox" value="Miercoles" /> Miercoles
+	<input id="fecha" name="fecha" type="checkbox" value="Jueves" /> Jueves
+	<input id="fecha" name="fecha" type="checkbox" value="Viernes" /> Viernes
+	<input id="fecha" name="fecha" type="checkbox" value="Sabado" /> Sabado
+	<input id="fecha" name="fecha" type="checkbox" value="Domingo" /> Domingo
+	
+    </div>
+  
+  
+    <%= f.input :fecpro %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

@@ -1,0 +1,62 @@
+<%= form_for(@user) do |f| %>
+
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :lastname %><br />
+    <%= f.text_field :lastname %>
+  </div>
+  <div class="field">
+    <%= f.label :maidenname %><br />
+    <%= f.text_field :maidenname %>
+  </div>
+  <div class="field">
+	<%= f.label :sexo %><br />
+	<%= f.radio_button :sexo, "Femenino" %> Femenino
+	<%= f.radio_button :sexo, "Masculino" %> Masculino
+  </div>
+  
+  <div class="field">
+    <%= f.label :pruebain %><br />
+	<select name="pruebain"> <option value="">Select Please</option> <option value="1">DNI</option> <option value="2">LE</option> <option value="3">LM</option> </select> 
+
+ </div>
+  
+  <div class="field">
+    <%= f.label :documentnumber %><br />
+    <%= f.text_field :documentnumber %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :confirmarmail %><br />
+    <%= f.text_field :confirmarmail %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :cpassword %><br />
+    <%= f.text_field :cpassword %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fecha %><br />
+    <%= f.date_select :fecha %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :cellnumber %><br />
+    <%= f.text_field :cellnumber %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit "Guardar" %>
+  </div>
+<% end %>
